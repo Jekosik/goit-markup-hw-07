@@ -1,0 +1,36 @@
+.button {
+  color: $white-color;
+  background: $accent-color;
+
+  font-family: inherit;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+  border-radius: 4px;
+  min-width: 200px;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  &.primary {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+
+    padding: 10px 32px;
+    cursor: pointer;
+  }
+
+  &.secondary {
+    display: inline-flex;
+    align-self: flex-end;
+    height: 50px;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+
+    padding: 10px 29px;
+  }
+}
