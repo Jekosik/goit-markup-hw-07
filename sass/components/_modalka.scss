@@ -39,6 +39,7 @@
 }
 
 .button.send {
+  @extend %button;
   display: block;
   margin: auto;
   height: 50px;

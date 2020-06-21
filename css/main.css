@@ -1,4 +1,43 @@
 @charset "UTF-8";
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0px;
+  padding: 0px;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.button.primary, .button.secondary, .button.send {
+  color: #ffffff;
+  background: #2196f3;
+  font-family: inherit;
+  text-decoration: none;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  border-radius: 4px;
+  min-width: 200px;
+  border: none;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.commands-link, .commands-case.botton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 44px;
+  border-radius: 50%;
+  margin-bottom: 24px;
+}
+
 ul {
   list-style: none;
   margin-bottom: 0;
@@ -80,6 +119,10 @@ img {
 
 .site-nav .item + .item {
   margin-left: 50px;
+}
+
+.item {
+  overflow: hidden;
 }
 
 .site-nav .link {
@@ -189,25 +232,6 @@ img {
 .link:hover .icon-contact,
 .link:focus .icon-contact {
   fill: #2196f3;
-}
-
-.button {
-  color: #ffffff;
-  background: #2196f3;
-  font-family: inherit;
-  text-decoration: none;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  border-radius: 4px;
-  min-width: 200px;
-  border: none;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .button.primary {
@@ -462,15 +486,6 @@ img {
   margin-right: 0px;
 }
 
-.commands-case {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 44px;
-  border-radius: 50%;
-  margin-bottom: 24px;
-}
-
 .commands-link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -674,6 +689,37 @@ footer {
 
 .finish-social li + li {
   margin-left: 10px;
+}
+
+.commands-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 44px;
+  border-radius: 50%;
+  outline: none;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.commands-icon {
+  fill: #afb1b8;
+}
+
+.commands-case .commands-link:hover,
+.commands-case .commands-link:focus {
+  background-color: #2196f3;
+}
+
+.commands-case .commands-link:hover > .commands-icon,
+.commands-case .commands-link:focus > .commands-icon {
+  fill: #ffffff;
 }
 
 .commands-case.botton {

@@ -98,7 +98,35 @@ footer {
   margin-left: 10px;
 }
 
+.commands-link {
+  @extend %commands-case;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  border-radius: 50%;
+  outline: none;
+
+  transition: background-color $transition-duration $cubic,
+    color $transition-duration $cubic;
+}
+
+.commands-icon {
+  fill: #afb1b8;
+}
+
+.commands-case .commands-link:hover,
+.commands-case .commands-link:focus {
+  background-color: $accent-color;
+}
+
+.commands-case .commands-link:hover > .commands-icon,
+.commands-case .commands-link:focus > .commands-icon {
+  fill: $white-color;
+}
+
 .commands-case.botton {
+  @extend %commands-case;
   background-color: rgba(255, 255, 255, 0.1);
 }
 

@@ -77,14 +77,15 @@
   }
 }
 
-.commands-case {
-  display: flex;
-  height: 44px;
-  border-radius: 50%;
-  margin-bottom: 24px;
-}
+// .commands-case {
+//   display: flex;
+//   height: 44px;
+//   border-radius: 50%;
+//   margin-bottom: 24px;
+// }
 
 .commands-link {
+  @extend %commands-case;
   display: flex;
   align-items: center;
   justify-content: center;
